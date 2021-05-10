@@ -5,3 +5,24 @@
 body{
     background: #101010 !important;
 }
+
+#nombre{
+    color: #c7af8b;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.bg-black{
+    color: #fff;
+    background: #000;
+}
+
+#main-header .item{
+    width: 30%;
+}
+
+@media(min-width: 1199px){
+    .item{
+        padding: 4.6em !important;
+    }
+}
