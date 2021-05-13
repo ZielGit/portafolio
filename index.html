@@ -206,6 +206,55 @@
         </div>
       </div>
 
+      <!-- TRABAJOS -->
+      <div id="trabajos" class="collapse">
+        <h3>Mis Trabajos</h3>
+        <p>
+          Algunos de mis proyectos
+        </p>
+        <div class="card card-body py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="img/render2web.jpg" data-toggle="lightbox" data-title="render2web" data-footer="Blog">
+                <img src="img/render2web.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="img/1adesignprinting.jpg" data-toggle="lightbox" data-title="1a Disign" data-footer="Sitio Web">
+                <img src="img/1adesignprinting.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="img/joyeriaelpaisa.jpg" data-toggle="lightbox" data-title="Joyeria el Paisa" data-footer="Sitio Web Joyeria">
+                <img src="img/joyeriaelpaisa.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <a href="img/undolar.jpg" data-toggle="lightbox" data-title="Un Dolar" data-footer="Sitio Web">
+                <img src="img/undolar.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="img/muy_femenino.jpg" data-toggle="lightbox" data-title="Muy Femenino" data-footer="Blog">
+                <img src="img/muy_femenino.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="img/agenciastage.jpg" data-toggle="lightbox" data-title="Agencia Stage" data-footer="Agencia de Modelaje">
+                <img src="img/agenciastage.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- FOOTER -->
       <footer class="mt-2 p-5 bg-primary text-white">
         <div class="row">
@@ -226,6 +275,15 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ekko lightbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+      $('.item').click(function(){
+        $('.collapse').collapse('hide');
+      });
 
+      $(document).on('click','[data-toggle="lightbox"]', function(e){
+        e.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
   </body>
 </html>
