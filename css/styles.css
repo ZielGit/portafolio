@@ -26,3 +26,9 @@ body{
         padding: 4.6em !important;
     }
 }
+
+@media(max-width: 680px){
+    #nombre{
+        font-size: 1.5rem;
+    }
+}
